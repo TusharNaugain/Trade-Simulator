@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,6 +50,10 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Trading specific colors */
+    --bid: 142, 76%, 36%;
+    --ask: 0, 91%, 71%;
   }
 
   .dark {
@@ -87,6 +92,10 @@
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Trading specific colors */
+    --bid: 142, 76%, 36%;
+    --ask: 0, 91%, 71%;
   }
 }
 
@@ -98,4 +107,43 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.orderbook-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 4px;
+}
+
+.bid-row {
+  background-color: rgba(var(--bid), 0.1);
+}
+
+.ask-row {
+  background-color: rgba(var(--ask), 0.1);
+}
+
+.bid-price {
+  color: hsl(var(--bid));
+}
+
+.ask-price {
+  color: hsl(var(--ask));
+}
+
+.depth-bar {
+  position: absolute;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.15;
+}
+
+.bid-bar {
+  background-color: hsl(var(--bid));
+  right: 0;
+}
+
+.ask-bar {
+  background-color: hsl(var(--ask));
+  left: 0;
 }
