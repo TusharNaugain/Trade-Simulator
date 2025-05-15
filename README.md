@@ -1,30 +1,12 @@
 
-
-## Project info
-
-**URL**: https://lovable.dev/projects/5caf4cd8-6dba-48ab-a47a-e6d4d2979ba3
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-
-
-
-
-**Use your preferred IDE**
-
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:lovable
+Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/TusharNaugain/Trade-Simulator.git
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd orderbook-velocity-engine 
 
 # Step 3: Install the necessary dependencies.
 npm i
